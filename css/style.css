@@ -77,10 +77,11 @@ blockquote {
 }
 .header {
 	overflow: hidden;
-	padding: 34px 0;
+	padding-top: 26px;
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 999;
 }
 .logo {
 	float: left;
@@ -91,13 +92,13 @@ blockquote {
 }
 .header-nav {
 	float: right;
-	color: #e2e2e2;
+	color: rgba(255, 255, 255, 0.75);
 }
 .header .header-nav li {
 	float:left;
 	line-height: 22px;
 }
-.header .header-nav li+li {
+.header .header-nav li + li {
 	margin-left: 35px;
 }
 .title {
@@ -183,7 +184,6 @@ blockquote span,
 .inner-content {
 	vertical-align: middle;
 	display: inline-block;
-	margin-top: -158px;
 }
 .inner h1 {
 	color: #fff;
@@ -192,10 +192,10 @@ blockquote span,
 	font-weight: 400;
 	letter-spacing: 1.7em;
 	text-indent: 1.7em;
-	margin: 100px 0;
+	margin-bottom: 100px;
 }
 .inner span {
-	color: #e2e2e2;
+	color: rgba(255, 255, 255, 0.68);
 	font-size: 19px;
 	display: block;
 	font-weight: 300;
