@@ -215,10 +215,6 @@ blockquote span,
 }
 /* ----- Inner end ----- */
 /* ----- About-studio ----- */
-.team-wrapper {
-	overflow: hidden;
-	width: 100%;
-}
 .team-item .team-item-info span {
 	display: block;
 	margin-bottom: 16px;
