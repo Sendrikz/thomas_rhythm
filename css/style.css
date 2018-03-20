@@ -273,4 +273,16 @@ blockquote span,
 	padding-bottom: 34px;
 } 
 /* ----- Services end ----- */
+/* ----- Lets talk ----- */
+.lets-talk-content {
+	padding: 140px 0;
+}
+.lets-talk-content p {
+	color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img {
+	margin-top: -32px;
+}
+/* ----- Lets talk end ----- */
 /* Custom styles end */
