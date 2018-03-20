@@ -2,6 +2,9 @@
 *{
 	box-sizing: border-box;
 }
+*:focus {
+	outline: none;
+}
 body{
 	margin: 0;
 	background-color: #fff;
@@ -38,6 +41,11 @@ button {
 }
 blockquote {
 	margin: 0;
+}
+hr {
+	border: none;
+	background-color: #ececec;
+	height: 1px;	
 }
 /* Reset end */
 /* Default class start */
@@ -157,6 +165,7 @@ blockquote span,
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 400;
+	letter-spacing: 0.2em;
 }
 .btn.btn-default {
 	background-color: #e5e5e5;
@@ -239,4 +248,29 @@ blockquote span,
 	opacity: 1;
 }
 /* ----- About-studio end ----- */
+/* ----- Services ----- */
+#tabs .tabs-nav li {
+	float: left;
+	width: 20%;
+	text-align: center;
+	overflow: hidden;
+	padding-top: 51px;
+	padding-bottom: 75px;
+}
+#tabs .tabs-nav .ui-state-active {
+	color: #000;
+}
+#tabs .tabs-nav li span {
+	display: block;
+}
+#tabs .tabs-nav li .icon-name {
+	font-family: 'Dosis';
+	font-weight: 400;
+	letter-spacing: 0.4em;
+}
+#tabs .tabs-nav li .icon {
+	font-size: 48px;
+	padding-bottom: 34px;
+} 
+/* ----- Services end ----- */
 /* Custom styles end */
