@@ -237,6 +237,15 @@ textarea.form-control {
 .form-info .fa {
 	font-size: 12px;
 }
+.icon-name {
+	font-family: 'Dosis';
+	font-weight: 400;
+	letter-spacing: 0.4em;
+}
+.icon {
+	font-size: 48px;
+	padding-bottom: 34px;
+} 
 /* Default components end */
 /* Guide styles start */
 .guide-section form .form-control {
@@ -310,13 +319,15 @@ textarea.form-control {
 }
 /* ----- About-studio end ----- */
 /* ----- Services ----- */
+#tabs .tabs-nav {
+	overflow: hidden;
+	padding-top: 46px;
+	padding-bottom: 75px;
+}
 #tabs .tabs-nav li {
 	float: left;
 	width: 20%;
 	text-align: center;
-	overflow: hidden;
-	padding-top: 51px;
-	padding-bottom: 75px;
 }
 #tabs .tabs-nav .ui-state-active {
 	color: #000;
@@ -324,15 +335,6 @@ textarea.form-control {
 #tabs .tabs-nav li span {
 	display: block;
 }
-#tabs .tabs-nav li .icon-name {
-	font-family: 'Dosis';
-	font-weight: 400;
-	letter-spacing: 0.4em;
-}
-#tabs .tabs-nav li .icon {
-	font-size: 48px;
-	padding-bottom: 34px;
-} 
 /* ----- Services end ----- */
 /* ----- Lets talk ----- */
 .lets-talk-content {
@@ -346,6 +348,25 @@ textarea.form-control {
 	margin-top: -32px;
 }
 /* ----- Lets talk end ----- */
+/* ----- Why choose us ----- */
+.choose-wrapper {
+	padding-top: 15px;
+}
+.choose-wrapper .row + .row {
+	margin-top: 88px;
+}
+.choose-item .choose-logo {
+	color: #000;
+	margin-bottom: 34px;
+}
+.choose-item .choose-logo span {
+	display: block;
+} 
+.choose-item .choose-item-info {
+	line-height: 2.6;
+	font-size: 14px;
+}
+/* ----- Why choose us end ----- */
 /* ----- Subscribe ----- */
 .subscribe form .form-control {
 	max-width: 290px;
