@@ -45,6 +45,7 @@ input[type="submit"] {
 }
 button {
 	cursor: pointer;
+	padding: 0;
 }
 textarea {
 	resize: vertical;
@@ -370,6 +371,26 @@ textarea.form-control {
 /* ------ Reviews-carousel start ------ */
 .reviews-carousel {
 	padding: 135px 0;
+	overflow: hidden;
+}
+.reviews-carousel .slide-content {
+	margin:auto;
+	max-width: 680px;
+}
+.reviews-carousel .slide-content .title {
+	margin-bottom: 46px;
+}
+.reviews-carousel .slide-content p {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 26px;
+	line-height: 30px;
+}
+.reviews-carousel .slide-content .review-author {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.3);
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
 }
 .slick-dots {
 	position: absolute;
@@ -379,6 +400,66 @@ textarea.form-control {
 }
 .slick-dots li {
 	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+.slick-dots li + li {
+	margin-left: 5px;
+}
+.slick-dots li button {
+	display: none;	
+}
+.slick-dots li.slick-active {
+	background-color: #000;
+	border-color:rgba(255, 255, 255, 0.8);
+}
+.slick-arrow {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	cursor: pointer;
+	z-index: 1;
+	width: 90px;
+}
+.slick-arrow.slick-prev {
+	left: 0;
+}
+.slick-arrow.slick-next {
+	right: 0;
+}
+.slick-arrow.slick-next .carousel-button {
+	right: 0;
+	margin-right: -31px;
+}
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 63px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -31px;
+}
+.slick-arrow .carousel-button .fa {
+	position: absolute;
+	font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	transform: rotate(45deg);
+	bottom: 14px;
+	right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	transform: rotate(-135deg);
+	top: 14px;
+	left: 17px;
 }
 /* ------ Review-carousel end ------ */
 
