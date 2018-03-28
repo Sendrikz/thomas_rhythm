@@ -247,6 +247,28 @@ textarea.form-control {
 	font-size: 48px;
 	padding-bottom: 34px;
 } 
+.m-auto {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rhomb-icon {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 2px;
+	font-size: 14px;
+	transform: rotate(45deg); 
+}
+.rhomb-icon.black-icon {
+	color: #fff;
+	background-color: #111;
+}
+.rhomb-icon i {
+	transform: rotate(-45deg);
+}
 /* Default components end */
 /* Guide styles start */
 .guide-section form .form-control {
@@ -471,4 +493,30 @@ textarea.form-control {
 	margin-top: 17px;
 }
 /* ----- Subscribe end----- */
+
+/* ------ Contact Start ------ */
+.contact-items-wrapper {
+	padding-top: 25px;
+}
+.contact-item-content {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.contact-item-content span {
+	display: block;
+}
+.contact-item-content .contact-title {
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-size: 12px;
+}
+.contact-item-content .contact-item-data {
+	color: #111;
+	
+}
+.contact-item-content span + span {
+	margin-top: 14px;
+}
+/* ------ Contact end ------- */
 /* Custom styles end */
