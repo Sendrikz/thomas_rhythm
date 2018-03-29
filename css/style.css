@@ -266,6 +266,10 @@ textarea.form-control {
 	color: #fff;
 	background-color: #111;
 }
+.rhomb-icon.transparent-icon {
+	color: #111;
+	border: 1px solid #111;
+}
 .rhomb-icon i {
 	transform: rotate(-45deg);
 }
@@ -371,6 +375,54 @@ textarea.form-control {
 	margin-top: -32px;
 }
 /* ----- Lets talk end ----- */
+/* ------ Portfolio start ------ */
+.portfolio {
+	margin-top: 140px;
+	margin-bottom: 4px;
+}
+#portfolio-tabs {
+	overflow: hidden;
+}
+#portfolio-tabs .portfolio-tabs-nav {
+	margin-top: 87px;
+	margin-bottom: 50px;
+}
+#portfolio-tabs .portfolio-tabs-nav li{
+	display: inline-block;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+}
+#portfolio-tabs .portfolio-tabs-nav .ui-state-active {
+	color: #111;
+}
+#portfolio-tabs .portfolio-tabs-nav li + li {
+	margin-left: 63px;
+}
+#portfolio-tabs .portfolio-item {
+	width: 33.333%;
+	float: left;
+	padding: 4px;
+}
+#portfolio-tabs .portfolio-item img {
+	filter: grayscale(100%);
+	width: 100%
+}
+#portfolio-tabs .portfolio-item img:hover {
+	filter: none;
+}
+/* ----- Portfolio end ----- */
+/* ------ Portfolio start ------- */
+.portfolio .potrfolio-text {
+	max-width: 755px;
+	margin-left: auto;
+	margin-right: auto
+}
+.potrfolio-text span {
+	line-height: 26px;
+}
+/* ------ Portfolio end ------- */
 /* ----- Why choose us ----- */
 .choose-wrapper {
 	padding-top: 15px;
@@ -390,6 +442,47 @@ textarea.form-control {
 	font-size: 14px;
 }
 /* ----- Why choose us end ----- */
+/* ----- Latest news start ----- */
+.latest-news {
+	overflow: hidden;
+}
+.latest-news .title a {
+	float: right;
+	font-size: 11px;
+	letter-spacing: 0.4em;
+	color: #999999;
+}
+.latest-news .latest-news-item-img {
+	margin-bottom: 31px;
+	filter: grayscale(100%);
+}
+.latest-news .latest-news-item-img:hover {
+	filter: none;
+}
+.latest-news .latest-news-title {
+	margin-bottom: 29px;
+}
+.latest-news .latest-news-title span {
+	font-size: 15px;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	display: block;
+	color: #777777;
+}
+.latest-news .latest-news-title span + span {
+	margin-top: 19px;
+}
+.latest-news .latest-news-title .title-desc {
+	font-size: 11px;
+	letter-spacing: 0.4em;
+	color: #999999;
+}
+.latest-news .latest-news-description {
+	color: #777777;
+	margin-bottom: 32px;
+}
+/* ----- Latest news end ----- */
 /* ------ Reviews-carousel start ------ */
 .reviews-carousel {
 	padding: 135px 0;
@@ -512,11 +605,39 @@ textarea.form-control {
 	font-size: 12px;
 }
 .contact-item-content .contact-item-data {
-	color: #111;
+	color: #444444;
 	
 }
 .contact-item-content span + span {
 	margin-top: 14px;
 }
 /* ------ Contact end ------- */
+/* ----- Footer start ------- */
+.footer {
+	margin-top: 140px;
+	margin-bottom: 60px;
+}
+.footer .footer-logo {
+	margin-bottom: 24px;
+}
+.footer .footer-logo-nav {
+	margin-bottom: 108px;
+}
+.footer .footer-logo-nav li {
+	line-height: 20px;
+}
+.footer .footer-logo-nav li + li {
+	margin-left: 13px;
+}
+.footer-text .footer-copyright {
+	font-size: 12px;
+	letter-spacing: 0.5em;
+	color: black;
+	display: block;
+	margin-bottom: 17px;
+}
+.footer-text .footer-made {
+	font-size: 11px;
+}
+/* ----- Footer end ----- */
 /* Custom styles end */

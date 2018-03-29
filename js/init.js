@@ -1,5 +1,6 @@
 $( function() {
     $( "#tabs" ).tabs();
+    $("#portfolio-tabs").tabs();
     // Init slick carousel
     $('.reviews-carousel').slick({
       dots:true,
