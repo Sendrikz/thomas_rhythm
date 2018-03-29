@@ -549,7 +549,7 @@
         <div class="container">
           <div class="title section-title text-uppercase">
             <span>Latest news</span>
-            <a href="#">All News in our blog</a>
+            <a href="#">All News in our blog <i class="fa fa-angle-right"></i></a>
           </div>
           <!-- /title -->
           <div class="row">
@@ -573,7 +573,7 @@
                   </p>
                 </div>
                 <!-- /latest-news-description -->
-                <button class="btn btn-default btn-xs"> Read More </button>
+                <button class="btn btn-default btn-xs"> Read More <i class="fa fa-angle-right"></i></button>
               </div>
               <!-- /latest-news-item -->
             </div>
@@ -598,7 +598,7 @@
                   </p>
                 </div>
                 <!-- /latest-news-description -->
-                <button class="btn btn-default btn-xs"> Read More </button>
+                <button class="btn btn-default btn-xs"> Read More <i class="fa fa-angle-right"></i></button>
               </div>
               <!-- /latest-news-item -->
             </div>
@@ -623,7 +623,7 @@
                   </p>
                 </div>
                 <!-- /latest-news-description -->
-                <button class="btn btn-default btn-xs"> Read More </button>
+                <button class="btn btn-default btn-xs"> Read More <i class="fa fa-angle-right"></i></button>
               </div>
               <!-- /latest-news-item -->
             </div>
@@ -711,13 +711,49 @@
                 <!-- /row -->
               </div>
               <!-- /contact-items-wrapper-->
+              <form class="contact-form">
+                <div class="form-col">
+                  <input type="text" name="user-name" id="user-name" class="form-control" placeholder="Name">
+                  <input type="text" name="user-email" id="user-email" class="form-control" placeholder="Email">
+                </div>
+                <!-- /form-col -->
+                <div class="form-col">
+                  <textarea name="user-message" id="user-massage" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <!-- /form-col -->
+                <div class="form-nav-part">
+                  <div class="form-info pull-left">
+                    <span> <i class="fa fa-info-circle"></i> All the fields are required </span>
+                  </div>
+                  <!-- /form-info -->
+                  <button type="submit" class="btn btn-black pull-right"> Submit message </button>
+                </div>
+              </form>
+              <!-- /contact-form -->
             </div>
             <!-- /col -->
           </div>
           <!-- /row -->
         </div>
+        <!-- /container -->
        </div>
        <!-- /contact -->
+       <div class="map-container">
+         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.737914030674!2d30.519108233731032!3d50.46460495644616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce3f8783f067%3A0x20e77fb079389395!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INGD0L3RltCy0LXRgNGB0LjRgtC10YIgItCa0LjRlNCy0L4t0JzQvtCz0LjQu9GP0L3RgdGM0LrQsCDQsNC60LDQtNC10LzRltGPIg!5e0!3m2!1suk!2sua!4v1522358758018" 
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+          <div id="map"></div>
+          <div class="on-map-block text-center">
+            <div class="on-map-block-item">
+              <div class="rhomb-icon white-icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <!-- /rhomb-icon -->
+              <div class="title section-title title-white text-uppercase text-center">
+                <span>Open the map <i class="fa fa-angle-down"></i></span>
+              </div>
+            </div>
+          </div>
+       </div>
     </div>
     <!-- END START -->
     <div class="footer">
@@ -748,7 +784,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Init plagin -->
     <script src="js/init.js"></script>
+    <!-- Init Google map file -->
+    <script src="js/google-maps.js"></script>
     <!-- Plugins -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdL4C6QPhDNdSYXWw5qInjhlcrODIma0&callback=initMap"></script>
   </body>
 </html>
+
+<!-- AIzaSyDpdL4C6QPhDNdSYXWw5qInjhlcrODIma0  -->
