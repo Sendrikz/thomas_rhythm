@@ -749,9 +749,9 @@ textarea.form-control {
 /* ------ Arrow-up end ----- */
 /* ----- Footer start ------- */
 .footer {
-	/*background-color: #f8f8f8;*/
-	margin-top: 140px;
-	margin-bottom: 60px;
+	background-color: #f8f8f8;
+	padding-top: 140px;
+	padding-bottom: 60px;
 }
 .footer .footer-logo {
 	margin-bottom: 24px;
