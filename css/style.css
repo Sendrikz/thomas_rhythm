@@ -53,6 +53,11 @@ textarea {
 blockquote {
 	margin: 0;
 }
+@media(max-width: 991px) {
+	blockquote {
+		margin-bottom: 30px;
+	}
+}
 hr {
 	border: none;
 	background-color: #ececec;
@@ -90,6 +95,11 @@ hr {
 	padding: 135px 0;
 	/* overflow: hidden; */
 }
+@media(max-width: 991px) {
+	.default-section {
+		padding: 100px 0;
+	}
+}
 .small-section {
 	padding: 70px 0;
 }
@@ -102,7 +112,7 @@ hr {
 	padding: 0 15px;
 }
 .header {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	padding-top: 26px;
 	padding-bottom: 26px;
 	position: absolute; /* позиционирование относительно окна */
@@ -112,6 +122,11 @@ hr {
 }
 .logo {
 	float: left;
+}
+@media(max-width: 767px) {
+	.logo a {
+		line-height: 48px;
+	}
 }
 .header .container-fluid {
 	max-width: 1576px;
@@ -129,6 +144,17 @@ hr {
 .header .header-nav li + li {
 	margin-left: 35px;
 }
+.slicknav_menu {
+	display: none;
+}
+@media(max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+	}
+	.header-nav {
+		display: none;
+	}
+}
 .title {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
@@ -142,6 +168,12 @@ hr {
 	letter-spacing: 0.5em; 
 	margin-bottom: 75px;
 	font-weight: 400;
+}
+@media(max-width: 991px) {
+	.title.section-title {
+		font-size: 14px;
+		margin-bottom: 50px;
+	}
 }
 .title.section-title-light {
 	font-size: 18px;
@@ -157,8 +189,18 @@ hr {
 .title.member-title.team-item-name {
 	font-size: 15px;
 }
+@media(max-width: 991px) {
+	.title.member-title.team-item-name {
+		font-size: 12px;
+	}
+}
 .title.member-title.team-item-role {
 	font-size: 12px;
+}
+@media(max-width: 991px) {
+	.title.member-title.team-item-role {
+		font-size: 9px;
+	}
 }
 .default-text {
 	font-size: 15px;
@@ -330,6 +372,14 @@ textarea.form-control {
 	display: block;
 	font-weight: 300;
 }
+
+@media(max-width: 991px) {
+	.inner .inner-content h1 {
+		letter-spacing: 0.7em;
+		text-indent: 0.7em;
+		margin-bottom: 50px;
+	}
+}
 /* ----- Inner end ----- */
 /* ----- About-studio ----- */
 .team-wrapper {
@@ -366,12 +416,27 @@ textarea.form-control {
 .skills-info .title {
 	margin-bottom: 33px;
 }
+@media(max-width: 991px) {
+	.skills-info .title {
+		margin-bottom: 18px;
+	}
+}
 .skills-info .skills-desc {
 	margin-bottom: 45px;
+}
+@media(max-width: 991px) {
+	.skills-info .skills-desc {
+		margin-bottom: 15px;
+	}
 }
 .skills-desc .default-text {
 	font-size: 13px;
 	line-height: 21px;
+}
+@media(max-width: 991px) {
+	.skills-desc .default-text {
+		line-height: 18px;
+	}
 }
 .progress-wrapp {
 	width: 100%;
@@ -417,6 +482,12 @@ textarea.form-control {
 	padding-top: 46px;
 	padding-bottom: 75px;
 }
+@media(max-width: 991px) {
+	#tabs .tabs-nav {
+		padding-top: 0px;
+		padding-bottom: 40px;
+	}
+}
 #tabs .tabs-nav li {
 	float: left;
 	width: 20%;
@@ -428,10 +499,21 @@ textarea.form-control {
 #tabs .tabs-nav li span {
 	display: block;
 }
+@media(max-width: 991px) {
+	#tabs .tabs-nav li .icon-name {
+		font-size: 12px;
+	}
+}
 /* ----- Services end ----- */
 /* ----- Lets talk ----- */
 .lets-talk-content {
 	padding: 140px 0;
+}
+@media(max-width: 991px) {
+	.lets-talk-content {
+		padding: 70px 0;
+		text-align: center;
+	}
 }
 .lets-talk-content p {
 	color: rgba(255, 255, 255, 0.7);
@@ -446,12 +528,22 @@ textarea.form-control {
 	margin-top: 140px;
 	margin-bottom: 4px;
 }
+@media(max-width: 991px) {
+	.portfolio {
+		margin-top: 100px;
+	}
+}
 #portfolio-tabs {
 	overflow: hidden;
 }
 #portfolio-tabs .portfolio-tabs-nav {
 	margin-top: 87px;
 	margin-bottom: 50px;
+}
+@media(max-width: 991px) {
+	#portfolio-tabs .portfolio-tabs-nav {
+		margin-top: 50px;
+	}
 }
 #portfolio-tabs .portfolio-tabs-nav li{
 	display: inline-block;
@@ -470,6 +562,11 @@ textarea.form-control {
 	width: 33.333%;
 	float: left;
 	padding: 4px;
+}
+@media(max-width: 991px) {
+	#portfolio-tabs .portfolio-item {
+		width: 50%;
+	}
 }
 #portfolio-tabs .portfolio-item img {
 	filter: grayscale(100%);
@@ -496,6 +593,11 @@ textarea.form-control {
 .choose-wrapper .row + .row {
 	margin-top: 88px;
 }
+@media(max-width: 991px) {
+	.choose-wrapper .row + .row {
+		margin-top: 0px;
+	}
+}
 .choose-item .choose-logo {
 	color: #000;
 	margin-bottom: 34px;
@@ -506,6 +608,12 @@ textarea.form-control {
 .choose-item .choose-item-info {
 	line-height: 2.6;
 	font-size: 14px;
+}
+@media(max-width: 991px) {
+	.choose-item {
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 /* ----- Why choose us end ----- */
 /* ----- Latest news start ----- */
@@ -547,6 +655,19 @@ textarea.form-control {
 .latest-news .latest-news-description {
 	color: #777777;
 	margin-bottom: 32px;
+}
+@media(max-width: 991px) {
+	.latest-news .latest-news-item-img img {
+		width: 100%;
+	}
+	.latest-news .latest-news-item {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ececec;
+	}
+	.default-section.latest-news {
+		padding-bottom: 30px;
+	}
 }
 /* ----- Latest news end ----- */
 /* ------ Reviews-carousel start ------ */
