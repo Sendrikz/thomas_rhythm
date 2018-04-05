@@ -129,7 +129,7 @@ hr {
 	}
 }
 .header .container-fluid {
-	max-width: 1576px;
+	/* max-width: 1576px; */
 	margin: auto;
 }
 .header-nav {
@@ -140,6 +140,7 @@ hr {
 .header .header-nav li {
 	float:left;
 	line-height: 22px;
+	letter-spacing: 0.3em;
 }
 .header .header-nav li + li {
 	margin-left: 35px;
@@ -306,7 +307,7 @@ textarea.form-control {
 	width: 23px;
 	height: 23px;
 	text-align: center;
-	line-height: 23px;
+	line-height: 21px;
 	border-radius: 2px;
 	font-size: 14px;
 	transform: rotate(45deg); 
@@ -378,6 +379,12 @@ textarea.form-control {
 		letter-spacing: 0.7em;
 		text-indent: 0.7em;
 		margin-bottom: 50px;
+	}
+}
+@media(max-width: 767px) {
+	.inner {
+		height: auto;
+		padding: 150px 0;
 	}
 }
 /* ----- Inner end ----- */
@@ -606,7 +613,7 @@ textarea.form-control {
 	display: block;
 } 
 .choose-item .choose-item-info {
-	line-height: 2.6;
+	line-height: 26px;
 	font-size: 14px;
 }
 @media(max-width: 991px) {
@@ -847,6 +854,13 @@ textarea.form-control {
 .on-map-block .on-map-block-item span {
 	font-size: 16px;
 	color: rgba(255, 255, 255, .75);
+	font-family: 'Dosis';
+	font-weight: 400;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	display: block;
+	/*text-indent: 0.3em;*/
+	padding-left: 18px;
 }
 .on-map-block .on-map-block-item .rhomb-icon {
 	margin-bottom: 28px;
@@ -882,6 +896,7 @@ textarea.form-control {
 }
 .footer .footer-logo-nav li {
 	line-height: 20px;
+	display: inline-block;
 }
 .footer .footer-logo-nav li + li {
 	margin-left: 13px;
