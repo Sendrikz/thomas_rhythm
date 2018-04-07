@@ -53,15 +53,20 @@ textarea {
 blockquote {
 	margin: 0;
 }
+hr {
+	border: none;
+	background-color: #ececec;
+	height: 1px;	
+}
 @media(max-width: 991px) {
 	blockquote {
 		margin-bottom: 30px;
 	}
 }
-hr {
-	border: none;
-	background-color: #ececec;
-	height: 1px;	
+@media(max-width: 767px) {
+	blockquote {
+		margin-bottom: 0px;
+	}
 }
 /* Reset end */
 /* Default class start */
@@ -95,11 +100,6 @@ hr {
 	padding: 135px 0;
 	/* overflow: hidden; */
 }
-@media(max-width: 991px) {
-	.default-section {
-		padding: 100px 0;
-	}
-}
 .small-section {
 	padding: 70px 0;
 }
@@ -123,11 +123,6 @@ hr {
 .logo {
 	float: left;
 }
-@media(max-width: 767px) {
-	.logo a {
-		line-height: 48px;
-	}
-}
 .header .container-fluid {
 	/* max-width: 1576px; */
 	margin: auto;
@@ -148,14 +143,6 @@ hr {
 .slicknav_menu {
 	display: none;
 }
-@media(max-width: 767px) {
-	.slicknav_menu {
-		display: block;
-	}
-	.header-nav {
-		display: none;
-	}
-}
 .title {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
@@ -169,12 +156,6 @@ hr {
 	letter-spacing: 0.5em; 
 	margin-bottom: 75px;
 	font-weight: 400;
-}
-@media(max-width: 991px) {
-	.title.section-title {
-		font-size: 14px;
-		margin-bottom: 50px;
-	}
 }
 .title.section-title-light {
 	font-size: 18px;
@@ -190,18 +171,8 @@ hr {
 .title.member-title.team-item-name {
 	font-size: 15px;
 }
-@media(max-width: 991px) {
-	.title.member-title.team-item-name {
-		font-size: 12px;
-	}
-}
 .title.member-title.team-item-role {
 	font-size: 12px;
-}
-@media(max-width: 991px) {
-	.title.member-title.team-item-role {
-		font-size: 9px;
-	}
 }
 .default-text {
 	font-size: 15px;
@@ -327,6 +298,62 @@ textarea.form-control {
 .rhomb-icon i {
 	transform: rotate(-45deg);
 }
+@media(max-width: 1200px) {
+	.default-section {
+		padding: 100px 0;
+	}
+}
+@media(max-width: 991px) {
+	.default-section {
+		padding: 100px 0;
+	}
+	.title.member-title.team-item-name {
+		font-size: 12px;
+	}
+	.title.section-title {
+		font-size: 12px;
+		margin-bottom: 50px;
+	}
+	.title.member-title.team-item-role {
+		font-size: 9px;
+	}
+	textarea.form-control {
+		min-height: 93px;
+	}
+	.form-control {
+		height: 41px;
+	}
+}
+@media(max-width: 767px) {
+	.default-section {
+		padding: 80px 0;
+	}
+	.header {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.logo a {
+		line-height: 48px;
+	}
+	.slicknav_menu {
+		display: block;
+	}
+	.header-nav {
+		display: none;
+	}
+	.title.section-title {
+		font-size: 18px;
+	}
+	textarea.form-control {
+		margin-top: 10px;
+	}
+}
+@media(max-width: 479px) {
+	.header {
+		padding-top: 5px;
+		padding-bottom: 0;
+	}
+}
 /* Default components end */
 /* Guide styles start */
 .guide-section form .form-control {
@@ -373,6 +400,11 @@ textarea.form-control {
 	display: block;
 	font-weight: 300;
 }
+@media(max-width: 1200px) {
+	.inner .inner-content h1 {
+		margin-bottom: 50px;
+	}
+}
 
 @media(max-width: 991px) {
 	.inner .inner-content h1 {
@@ -385,6 +417,21 @@ textarea.form-control {
 	.inner {
 		height: auto;
 		padding: 150px 0;
+	}
+}
+@media(max-width: 576px) {
+	.inner h1 {
+		font-size: 24px;
+		margin-bottom: 35px;
+	}
+	.inner span {
+		font-size: 14px;
+	}
+}
+@media(max-width: 479px) {
+	.inner .inner-content h1 {
+		font-size: 17px;
+		margin-bottom: 35px;
 	}
 }
 /* ----- Inner end ----- */
@@ -423,27 +470,12 @@ textarea.form-control {
 .skills-info .title {
 	margin-bottom: 33px;
 }
-@media(max-width: 991px) {
-	.skills-info .title {
-		margin-bottom: 18px;
-	}
-}
 .skills-info .skills-desc {
 	margin-bottom: 45px;
-}
-@media(max-width: 991px) {
-	.skills-info .skills-desc {
-		margin-bottom: 15px;
-	}
 }
 .skills-desc .default-text {
 	font-size: 13px;
 	line-height: 21px;
-}
-@media(max-width: 991px) {
-	.skills-desc .default-text {
-		line-height: 18px;
-	}
 }
 .progress-wrapp {
 	width: 100%;
@@ -482,18 +514,98 @@ textarea.form-control {
 .progress-wrapp .progress.photography {
 	transition: width 0.5s ease-out .6s;
 }
+@media(max-width: 1200px) {
+	.team-wrapper {
+		margin-top: 50px;
+	}
+	.skills-info .skills-desc {
+		margin-bottom: 22px;
+	}
+}
+@media(max-width: 991px) {
+	.team-item .team-item-skills {
+		padding: 25px;
+	}
+	.skills-info .title {
+		margin-bottom: 18px;
+	}
+	.skill-item span {
+		font-size: 8px;
+	}
+	.skills-info .skills-desc {
+		margin-bottom: 15px;
+	}
+	.skills-desc .default-text {
+		line-height: 16px;
+		font-size: 11px;
+	}
+	.progress-wrapp {
+		margin-bottom: 10px;
+	}
+}
+@media(max-width: 767px) {
+	.team-wrapper .col.col-sm-8 {
+		left: 15%;
+		top: 0%;
+	}
+	.team-item .team-item-skills {
+		padding: 50px;
+	}
+	.skills-info .title {
+		margin-bottom: 33px;
+	}
+	.skill-item span {
+		font-size: 11px;
+	}
+	.skills-info .skills-desc {
+		margin-bottom: 45px;
+	}
+	.skills-desc .default-text {
+		font-size: 15px;
+		line-height: 21px;
+	}
+	.progress-wrapp {
+		margin-bottom: 20px;
+	}
+}
+@media(max-width: 576px) {
+	.skills-info .skills-desc {
+		margin-bottom: 15px;
+	}
+	.skills-desc .default-text {
+		line-height: 16px;
+		font-size: 13px;
+	}
+	.skills-info .title {
+		margin-bottom: 18px;
+		font-size: 16px;
+	}
+}
+@media(max-width: 479px) {
+	.team-item .team-item-skills {
+		padding: 18px;
+	}
+	.skills-desc .default-text {
+		line-height: 9px;
+		font-size: 9px;
+	}
+	.skills-info .title {
+		margin-bottom: 8px;
+		font-size: 10px;
+	}
+	.progress-wrapp {
+		margin-bottom: 10px;
+	}
+	.skill-item span {
+		font-size: 7px;
+	}
+}
 /* ----- About-studio end ----- */
 /* ----- Services ----- */
 #tabs .tabs-nav {
 	overflow: hidden;
 	padding-top: 46px;
 	padding-bottom: 75px;
-}
-@media(max-width: 991px) {
-	#tabs .tabs-nav {
-		padding-top: 0px;
-		padding-bottom: 40px;
-	}
 }
 #tabs .tabs-nav li {
 	float: left;
@@ -507,6 +619,10 @@ textarea.form-control {
 	display: block;
 }
 @media(max-width: 991px) {
+	#tabs .tabs-nav {
+		padding-top: 0px;
+		padding-bottom: 40px;
+	}
 	#tabs .tabs-nav li .icon-name {
 		font-size: 12px;
 	}
@@ -516,12 +632,6 @@ textarea.form-control {
 .lets-talk-content {
 	padding: 140px 0;
 }
-@media(max-width: 991px) {
-	.lets-talk-content {
-		padding: 70px 0;
-		text-align: center;
-	}
-}
 .lets-talk-content p {
 	color: rgba(255, 255, 255, 0.7);
 	margin-bottom: 35px;
@@ -529,16 +639,48 @@ textarea.form-control {
 .lets-talk .lets-talk-img {
 	margin-top: -32px;
 }
+@media(max-width: 1200px) {
+	.lets-talk-content span{
+		line-height: 26px;
+	}
+}
+
+@media(max-width: 991px) {
+	.lets-talk-content {
+		padding: 70px 0;
+		text-align: center;
+	}
+}
+@media(max-width: 767px) {
+	#tabs .tabs-nav li {
+		width: 33.333%;
+	}
+	#tabs .tabs-nav li:nth-child(4) {
+		margin-top: 50px;
+	}
+	#tabs .tabs-nav li:last-child {
+		margin-top: 50px;
+	}
+}
+@media(max-width: 479px) {
+	.lets-talk button {
+		width: 100%;
+	}
+	#tabs .tabs-nav li {
+		width: 50%;
+	}
+	#tabs .tabs-nav li:nth-child(3) {
+		margin-top: 50px;
+	}
+	#tabs .tabs-nav li:last-child {
+		clear: both;
+	}
+}
 /* ----- Lets talk end ----- */
 /* ------ Portfolio start ------ */
 .portfolio {
 	margin-top: 140px;
 	margin-bottom: 4px;
-}
-@media(max-width: 991px) {
-	.portfolio {
-		margin-top: 100px;
-	}
 }
 #portfolio-tabs {
 	overflow: hidden;
@@ -546,11 +688,6 @@ textarea.form-control {
 #portfolio-tabs .portfolio-tabs-nav {
 	margin-top: 87px;
 	margin-bottom: 50px;
-}
-@media(max-width: 991px) {
-	#portfolio-tabs .portfolio-tabs-nav {
-		margin-top: 50px;
-	}
 }
 #portfolio-tabs .portfolio-tabs-nav li{
 	display: inline-block;
@@ -570,11 +707,6 @@ textarea.form-control {
 	float: left;
 	padding: 4px;
 }
-@media(max-width: 991px) {
-	#portfolio-tabs .portfolio-item {
-		width: 50%;
-	}
-}
 #portfolio-tabs .portfolio-item img {
 	filter: grayscale(100%);
 	width: 100%
@@ -582,8 +714,6 @@ textarea.form-control {
 #portfolio-tabs .portfolio-item img:hover {
 	filter: none;
 }
-/* ----- Portfolio end ----- */
-/* ------ Portfolio start ------- */
 .portfolio .potrfolio-text {
 	max-width: 755px;
 	margin-left: auto;
@@ -592,18 +722,46 @@ textarea.form-control {
 .potrfolio-text span {
 	line-height: 26px;
 }
-/* ------ Portfolio end ------- */
+@media(max-width: 991px) {
+	.portfolio {
+		margin-top: 100px;
+	}
+	#portfolio-tabs .portfolio-tabs-nav {
+		margin-top: 50px;
+	}
+	#portfolio-tabs .portfolio-item {
+		width: 50%;
+	}
+}
+@media(max-width: 767px) {
+	#portfolio-tabs .portfolio-tabs-nav li + li {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	#portfolio-tabs .portfolio-tabs-nav li{
+		display: block;
+	}
+	#portfolio-tabs .portfolio-item {
+		width: 100%;
+	}
+}
+/* ----- Portfolio end ----- */
+/* ------ Start project start ------- */
+@media(max-width: 479px) {
+	.create-project .title {
+		line-height: 28px;
+	}
+	.create-project button {
+		width: 100%;
+	}
+}
+/* ------ Start project end ------- */
 /* ----- Why choose us ----- */
 .choose-wrapper {
 	padding-top: 15px;
 }
 .choose-wrapper .row + .row {
 	margin-top: 88px;
-}
-@media(max-width: 991px) {
-	.choose-wrapper .row + .row {
-		margin-top: 0px;
-	}
 }
 .choose-item .choose-logo {
 	color: #000;
@@ -617,6 +775,9 @@ textarea.form-control {
 	font-size: 14px;
 }
 @media(max-width: 991px) {
+	.choose-wrapper .row + .row {
+		margin-top: 0px;
+	}
 	.choose-item {
 		text-align: center;
 		margin-bottom: 30px;
@@ -632,6 +793,7 @@ textarea.form-control {
 	font-size: 11px;
 	letter-spacing: 0.4em;
 	color: #999999;
+	line-height: 25px;
 }
 .latest-news .latest-news-item-img {
 	margin-bottom: 31px;
@@ -674,6 +836,11 @@ textarea.form-control {
 	}
 	.default-section.latest-news {
 		padding-bottom: 30px;
+	}
+}
+@media(max-width: 479px) {
+	.latest-news .title a {
+		margin-top: 17px;
 	}
 }
 /* ----- Latest news end ----- */
@@ -770,6 +937,16 @@ textarea.form-control {
 	top: 14px;
 	left: 17px;
 }
+@media(max-width: 767px) {
+	.reviews-carousel .slide-content {
+		max-width: 400px;
+	}
+}
+@media(max-width: 479px) {
+	.reviews-carousel .slide-content {
+		max-width: 240px;
+	}
+}
 /* ------ Review-carousel end ------ */
 
 /* ----- Subscribe ----- */
@@ -778,6 +955,19 @@ textarea.form-control {
 }
 .subscribe .form-info {
 	margin-top: 17px;
+}
+@media(max-width: 479px) {
+	.subscribe .title {
+		line-height: 24px;
+	}
+	.subscribe form button {
+		margin-top: 5px;
+		width: 100%;
+	}
+	.subscribe form .form-control {
+		width: 100%;
+		max-width: 440px;
+	}
 }
 /* ----- Subscribe end----- */
 
@@ -826,6 +1016,41 @@ textarea.form-control {
 }
 .contact-form .form-nav-part {
 	margin: 0 5px;
+}
+
+@media(max-width: 991px) {
+	.contact-items-wrapper {
+		padding-left: 10px;
+	}
+}
+@media(max-width: 767px) {
+	.contact .title {
+		text-indent: 1.7em;
+	}
+	.contact-items-wrapper {
+		margin-bottom: 30px;
+	}
+	.contact-form .form-col {
+		width: 100%;
+	}
+	.contact-item-content {
+		display: block;
+		margin-left: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.contact-item .rhomb-icon {
+		position: relative;
+		left: 48%
+	}
+}
+@media(max-width: 479px) {
+	.contact-item .rhomb-icon {
+		left: 46%
+	}
+	.contact-form .form-nav-part button {
+		width: 100%;
+	}
 }
 /* ------ Contact end ------- */
 /* ------ Map start ----- */
