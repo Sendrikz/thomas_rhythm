@@ -523,33 +523,13 @@ textarea.form-control {
 	}
 }
 @media(max-width: 991px) {
-	.team-item .team-item-skills {
-		padding: 25px;
-	}
-	.skills-info .title {
-		margin-bottom: 18px;
-	}
-	.skill-item span {
-		font-size: 8px;
-	}
-	.skills-info .skills-desc {
-		margin-bottom: 15px;
-	}
-	.skills-desc .default-text {
-		line-height: 16px;
-		font-size: 11px;
-	}
-	.progress-wrapp {
-		margin-bottom: 10px;
-	}
-}
-@media(max-width: 767px) {
-	.team-wrapper .col.col-sm-8 {
-		left: 15%;
-		top: 0%;
+	.team-wrapper .col-md-7 {
+		left: 25%;
+		top: 0;
 	}
 	.team-item .team-item-skills {
 		padding: 50px;
+		width: 370px;
 	}
 	.skills-info .title {
 		margin-bottom: 33px;
@@ -564,11 +544,29 @@ textarea.form-control {
 		font-size: 15px;
 		line-height: 21px;
 	}
-	.progress-wrapp {
-		margin-bottom: 20px;
+	.team-item-info {
+		width: 370px;
+	}
+}
+@media(max-width: 767px) {
+	.team-item .team-item-skills {
+		width: 370px;
+		padding: 26px;
+	}
+}
+@media(max-width: 660px) {
+	.team-wrapper .col {
+		left: 20%;
+	}
+	.team-item .team-item-skills {
+		width: 100%;
 	}
 }
 @media(max-width: 576px) {
+	.team-wrapper .col.col-xs-8 {
+		left: 15%;
+		top: 0%;
+	}
 	.skills-info .skills-desc {
 		margin-bottom: 15px;
 	}
@@ -579,6 +577,9 @@ textarea.form-control {
 	.skills-info .title {
 		margin-bottom: 18px;
 		font-size: 16px;
+	}
+	.team-item-info {
+		width: 100%;
 	}
 }
 @media(max-width: 479px) {
@@ -836,6 +837,14 @@ textarea.form-control {
 	}
 	.default-section.latest-news {
 		padding-bottom: 30px;
+	}
+	.latest-news .title a {
+		line-height: 18px;
+	}
+}
+@media(max-width: 767px) {
+	.latest-news .title a {
+		line-height: 25px;
 	}
 }
 @media(max-width: 479px) {
